@@ -13,4 +13,9 @@ export default defineConfig({
     },
     preserveSymlinks: true
   },
+  build: {
+    commonjsOptions: {
+      include: [/liquid-sdk/, /node_modules/]
+    }
+  }
 })
